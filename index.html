@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global News Network - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="News Logo" />
+      <h1>Global News Network</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sports.html">Sports</a>
+      <a href="business.html">Business</a>
+      <a href="entertainment.html">Entertainment</a>
+      <a href="technology.html">Technology</a>
+    </nav>
+
+    <!-- Breaking News Section -->
+    <section class="breaking-news">
+      <h2>Breaking News</h2>
+      <div class="breaking-news-slider">
+        <div class="slide">
+          <img src="images/breaking1.jpg" alt="Global Stock Surge" />
+          <h3>Global Stocks Surge Amid Market Optimism</h3>
+          <p>Markets rally worldwide as economic data points to recovery.</p>
+        </div>
+        <div class="slide">
+          <img src="images/breaking2.jpg" alt="Tech Innovations" />
+          <h3>Latest Tech Innovations Unveiled at Annual Summit</h3>
+          <p>Tech giants introduce groundbreaking devices and software.</p>
+        </div>
+        <div class="slide">
+          <img src="images/breaking3.jpg" alt="Climate Action" />
+          <h3>Global Climate Action Agreement Reached</h3>
+          <p>
+            Countries commit to aggressive targets to combat climate change.
+          </p>
+        </div>
+        <div class="slide">
+          <img src="images/breaking4.jpg" alt="Sports Championship" />
+          <h3>Championship Game Ends in Nail-Biting Finish</h3>
+          <p>Fans are thrilled as the underdog team pulls off a major win.</p>
+        </div>
+        <div class="slide">
+          <img src="images/breaking5.jpg" alt="Entertainment Awards" />
+          <h3>Entertainment Awards: Top Winners and Highlights</h3>
+          <p>
+            A night of glamour as stars gather for the biggest awards ceremony.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Highlights Section -->
+    <section class="container news-category-highlights">
+      <h2>Top Stories by Category</h2>
+      <div class="category-section">
+        <div class="category-card">
+          <img src="images/sports1.jpg" alt="Sports Highlights" />
+          <h3>Sports</h3>
+          <p>Latest scores, highlights, and updates in the world of sports.</p>
+          <a href="sports.html">Read More</a>
+        </div>
+        <div class="category-card">
+          <img src="images/business1.jpg" alt="Business Insights" />
+          <h3>Business</h3>
+          <p>Market trends, stock updates, and financial insights.</p>
+          <a href="business.html">Read More</a>
+        </div>
+        <div class="category-card">
+          <img src="images/entertainment1.jpg" alt="Entertainment Buzz" />
+          <h3>Entertainment</h3>
+          <p>Celebrity news, movie releases, and music updates.</p>
+          <a href="entertainment.html">Read More</a>
+        </div>
+        <div class="category-card">
+          <img src="images/tech1.jpg" alt="Tech Trends" />
+          <h3>Technology</h3>
+          <p>Breakthroughs and updates in the world of technology.</p>
+          <a href="technology.html">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2024 Global News Network</footer>
+
+    <!-- Optional JavaScript for Slider -->
+    <script>
+      let slideIndex = 0;
+      function showSlides() {
+        const slides = document.querySelectorAll(".slide");
+        slides.forEach((slide, index) => {
+          slide.style.display = index === slideIndex ? "block" : "none";
+        });
+        slideIndex = (slideIndex + 1) % slides.length;
+      }
+      setInterval(showSlides, 3000);
+      showSlides();
+    </script>
+  </body>
+</html>
